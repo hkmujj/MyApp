@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/web"
+                style="@style/item_text1"
+                android:text="webview与JS交互" />
+            <TextView
+                android:id="@+id/thirdlogin"
+                style="@style/item_text1"
+                android:text="第三方登陆" />
+            <!--<TextView
+                android:id="@+id/uploadphone"
+                style="@style/item_text1"
+                android:text="选择/上传头像" />-->
+            <TextView
+                android:id="@+id/pullRefresh"
+                style="@style/item_text1"
+                android:text="下拉刷新" />
+            <TextView
+                android:id="@+id/materialDesign"
+                style="@style/item_text1"
+                android:text="Material Design" />
+            <TextView
+                android:id="@+id/mPermission"
+                style="@style/item_text1"
+                android:text="Easy Permission" />
+            <TextView
+                android:id="@+id/mRetrofit"
+                style="@style/item_text1"
+                android:text="Retrofit 2.0+Okhttp+Rxjava请求框架" />
+            <TextView
+                android:id="@+id/mBottomNavigation"
+                style="@style/item_text1"
+                android:text="BottomNavigation" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

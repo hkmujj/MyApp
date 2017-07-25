@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+ >
+    
+    <LinearLayout
+     android:id="@+id/chengjinlan"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dlna_chengjinlan"
+    android:background="@drawable/title_bg"
+    android:orientation="vertical" >
+	</LinearLayout>
+	
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="@dimen/title_height"
+    	android:layout_below="@+id/chengjinlan"
+        android:background="@drawable/title_bg">
+
+    <!-- 左标识 -->
+
+    <RelativeLayout
+        android:id="@+id/top_head_container"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip" >
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dip"
+            android:paddingRight="10dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/title_back"
+            android:visibility="visible" />       
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="取消"
+        	android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- 中间标题 -->
+
+    <RelativeLayout
+        android:id="@+id/title_click_layout"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="140dp"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <!-- 右标识 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_right"
+        android:layout_alignParentRight="true"
+        android:layout_width="90dp"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/top_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dip"
+            android:paddingRight="13dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/title_menu" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/underline_title" />
+</RelativeLayout>
+</RelativeLayout>
