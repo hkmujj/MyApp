@@ -47,4 +47,5 @@ dependencies {
 
     compile 'pub.devrel:easypermissions:0.3.1'
     compile 'com.ashokvarma.android:bottom-navigation-bar:1.4.1'
+    compile 'com.jaredrummler:material-spinner:1.1.0'
 }

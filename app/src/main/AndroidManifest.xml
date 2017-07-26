@@ -34,9 +34,9 @@
         <activity android:name=".ui.activity.CardViewActivity" />
         <activity android:name=".ui.activity.FloatingActionButtonActivity" />
         <activity android:name=".ui.activity.SwipeRefreshLayoutActivity" />
-        <activity android:name=".ui.activity.MaterialRefreshLayoutActivity" />
         <activity android:name=".ui.activity.EasyPermissionsActivity" />
         <activity android:name=".ui.activity.BottomNavigationActivity" />
+        <activity android:name=".ui.activity.MaterialSpinnerActivity" />
 
         <!-- QQ登陆  start-->
         <activity

@@ -1,6 +1,7 @@
 package com.xixi.myapp.ui.activity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -21,7 +22,9 @@ public class MaterialDesignActivity extends BaseActivity{
 	private RecyclerView recycler_view;
 	private RecyclerMainAdapter adapter;
 	private String mTitles[] = new String[]{"简单的DrawerLayout侧滑","DrawerLayout与NavigationView","TabLayout","CollapsingToolbarLayout",
-			"RecyclerView+CardView+Palette","UI控件"};
+			"RecyclerView+CardView+Palette","UI控件","MaterialSpinner"};
+	private Class<?>[] ACTIVITY = {DrawerlayoutActivity.class, NavigationViewActivity.class, TabLayoutActivity.class,
+			CollapsingToolbarActivity.class,CardViewActivity.class,FloatingActionButtonActivity.class,MaterialSpinnerActivity.class};
 
 	@BindView(R.id.toolbar)
 	Toolbar toolbar;
@@ -115,27 +118,8 @@ public class MaterialDesignActivity extends BaseActivity{
 		adapter.setOnItemClickLitener(new RecyclerMainAdapter.OnItemClickLitener() {
 			@Override
 			public void onItemClick(View view, int position) {
-				switch (position){
-					case 0:
-						goActivity(DrawerlayoutActivity.class);
-						break;
-					case 1:
-						goActivity(NavigationViewActivity.class);
-						break;
-					case 2:
-						goActivity(TabLayoutActivity.class);
-						break;
-					case 3:
-						goActivity(CollapsingToolbarActivity.class);
-						break;
-					case 4:
-						goActivity(CardViewActivity.class);
-						break;
-					case 5:
-						goActivity(FloatingActionButtonActivity.class);
-						break;
-
-				}
+				Intent intent = new Intent(MaterialDesignActivity.this, ACTIVITY[position]);
+				startActivity(intent);
 			}
 
 			@Override
